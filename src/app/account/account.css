@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .atm-container {
+    min-height: 100vh;
+    padding: 40px;
+    background: #f4f6f8;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  
+  /* Header */
+  
+  .atm-header {
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  
+  .atm-header h1 {
+    margin: 0;
+    font-size: 32px;
+  }
+  
+  .atm-header p {
+    color: #666;
+    margin-top: 8px;
+  }
+  
+  
+  /* Account Card */
+  
+  .account-card {
+    max-width: 1000px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  .account-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .account-header h2 {
+    margin: 0;
+  }
+  
+  .account-header p {
+    color: #777;
+  }
+  
+  
+  /* Status */
+  
+  .status {
+    padding: 8px 16px;
+    border-radius: 20px;
+    background: #dff5e5;
+    color: #16833b;
+    font-weight: bold;
+  }
+  
+  .status.inactive {
+    background: #fde2e2;
+    color: #c62828;
+  }
+  
+  
+  /* Balance */
+  
+  .balance-section {
+    margin-top: 30px;
+    padding: 25px;
+    border-radius: 10px;
+    background: #f5f7fa;
+  }
+  
+  .balance-section span {
+    color: #666;
+  }
+  
+  .balance-section h1 {
+    margin: 10px 0 0;
+    font-size: 38px;
+  }
+  
+  
+  /* Operations */
+  
+  .operations {
+    max-width: 1000px;
+    margin: 25px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+  
+  .operation-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  .operation-card h2 {
+    margin-top: 0;
+  }
+  
+  .operation-card p {
+    color: #666;
+  }
+  
+  
+  /* Form */
+  
+  .form-group {
+    margin-top: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  
+  
+  /* Button */
+  
+  .deposit-button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 13px;
+    border: none;
+    border-radius: 6px;
+    background: #1f6feb;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .deposit-button:hover {
+    background: #1557b0;
+  }
+  
+  
+  /* Account Details */
+  
+  .detail-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .detail-row span {
+    color: #666;
+  }
+  
+  
+  /* Messages */
+  
+  .success-message {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 15px;
+    background: #dff5e5;
+    color: #16833b;
+    border-radius: 6px;
+  }
+  
+  .error-message {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 15px;
+    background: #fde2e2;
+    color: #c62828;
+    border-radius: 6px;
+  }
+  
+  
+  /* Responsive */
+  
+  @media (max-width: 700px) {
+  
+    .atm-container {
+      padding: 20px;
+    }
+  
+    .operations {
+      grid-template-columns: 1fr;
+    }
+  
+    .account-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 15px;
+    }
+  
+  }
